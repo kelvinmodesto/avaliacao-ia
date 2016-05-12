@@ -1,0 +1,18 @@
+
+Download Python 3.5.1 - https://www.python.org/downloads/
+Download PyCharm Community - https://www.jetbrains.com/pycharm/download/
+
+Lightweight IDE
+for Python & Scientific
+development
+Localiza a pasta do Python
+cd C:\Users\iuri\AppData\Local\Programs\Python\Python35-32\Scripts 
+
+pip install wheel
+pip install numpy
+pip install matplotlib
+
+https://www.udacity.com/wiki/plotting-graphs-with-python
+
+
+
