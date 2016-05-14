@@ -29,6 +29,11 @@ for line in file:
 #i. cs x ls;
 plt.plot(cs, ls, 'ro')
 
+#plt.plot(cs[:50], ls[:50], 'r.')#Iris-setosa
+#plt.plot(cs[51:100], ls[51:100], 'b.')#Iris-versicolor
+#plt.plot(cs[101:150], ls[101:150], 'g.')#Iris-virginica
+
+
 #ii. cs x cp;
 plt.plot(cs, cp, 'bo')
 
@@ -45,7 +50,7 @@ plt.plot(ls, lp, 'r*')
 plt.plot(cp, lp, 'y.')
 
 
-plt.savefig('grafico.png')
+#plt.savefig('grafico.png')
 plt.show()
 
 
