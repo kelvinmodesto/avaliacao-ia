@@ -5,12 +5,21 @@ Download PyCharm Community - https://www.jetbrains.com/pycharm/download/
 Lightweight IDE
 for Python & Scientific
 development
-Localiza a pasta do Python
-cd C:\Users\iuri\AppData\Local\Programs\Python\Python35-32\Scripts 
 
-pip install wheel
-pip install numpy
-pip install matplotlib
+****************INSTALAR AS BILBIOTECAS********************
+Localiza a pasta do Python
+Execute dentro do cmd do windows:
+
+1 - localiza a pasta do python scripts
+"cd C:\Users\iuri\AppData\Local\Programs\Python\Python35-32\Scripts"
+
+2 - instalar as bibliotecas
+"pip install wheel"
+"pip install numpy"
+"pip install matplotlib"
+"pip install -U scikit-learn" (para o k-means)
+*******************************************
+
 
 https://www.udacity.com/wiki/plotting-graphs-with-python
 
