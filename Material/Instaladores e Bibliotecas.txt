@@ -21,6 +21,28 @@ Execute dentro do cmd do windows:
 *******************************************
 
 
+
+****INSTALAR A BIBLIOTECA SCIPY*********************
+
+1 - localiza a pasta do python scripts
+
+Abrir o cmd 
+
+"cd C:\Users\iuri\AppData\Local\Programs\Python\Python35-32\Scripts"
+
+2 - localize os arquivos spicy e numpy (para fica mais facil é só colocar os arquivos na propria pasta Scripts) 
+
+ Segue o exemplo pip install diretorio/algumacoisa/some-package.whl 
+ (o arquivo numpy e scipy eu coloquei na pasta Script par facilitar)
+
+3 - "pip install numpy-1.11.0+mkl-cp35-cp35m-win32.whl" 
+
+4 - "pip install scipy-0.17.0-cp35-cp35m-win32.whl" 
+
+
+
+********************************
+
 https://www.udacity.com/wiki/plotting-graphs-with-python
 
 
