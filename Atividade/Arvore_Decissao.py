@@ -6,36 +6,36 @@ import matplotlib.pyplot as plt
 from sklearn.datasets import load_iris
 from sklearn.tree import DecisionTreeClassifier
 
-# Parameters
+
 n_classes = 3
-plot_colors = "bry"
+plot_colors = "bry" #cor blue red e yellow
 plot_step = 0.02
 
-# Load data
+#  Carrga os dados da biblioteca
 iris = load_iris()
 
 for pairidx, pair in enumerate([[0, 1], [0, 2], [0, 3],
                                 [1, 2], [1, 3], [2, 3]]):
-    # We only take the two corresponding features
+    # ira ser com um par de caracteristicas
     X = iris.data[:, pair]
     y = iris.target
 
-    # Shuffle
+    # Embaralha os dados para analise
     idx = np.arange(X.shape[0])
     np.random.seed(13)
     np.random.shuffle(idx)
     X = X[idx]
     y = y[idx]
 
-    # Standardize
+    # Uniformiza os dados
     mean = X.mean(axis=0)
     std = X.std(axis=0)
     X = (X - mean) / std
 
-    # Train
+    # treina a arvore de decisão usando a biblioteca
     clf = DecisionTreeClassifier().fit(X, y)
 
-    # Plot the decision boundary
+    # Plota os limite do graficos
     plt.subplot(2, 3, pairidx + 1)
 
     x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
@@ -51,7 +51,7 @@ for pairidx, pair in enumerate([[0, 1], [0, 2], [0, 3],
     plt.ylabel(iris.feature_names[pair[1]])
     plt.axis("tight")
 
-    # Plot the training points
+    # Plota os pontos de treinamento
     for i, color in zip(range(n_classes), plot_colors):
         idx = np.where(y == i)
         plt.scatter(X[idx, 0], X[idx, 1], c=color, label=iris.target_names[i],
@@ -59,6 +59,6 @@ for pairidx, pair in enumerate([[0, 1], [0, 2], [0, 3],
 
     plt.axis("tight")
 
-plt.suptitle("Decision surface of a decision tree using paired features")
+plt.suptitle("Superfície da Árvore de decisão")
 plt.legend()
 plt.show()
