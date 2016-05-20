@@ -1,6 +1,3 @@
-print(__doc__)
-
-
 # Author: Issam H. Laradji
 # License: BSD 3 clause
 
@@ -39,7 +36,7 @@ i = 1
 for X, y in datasets:
     # preprocess dataset, split into training and test part
     X = StandardScaler().fit_transform(X)
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.4)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.3)# 30% para teste
 
     x_min, x_max = X[:, 0].min() - .5, X[:, 0].max() + .5
     y_min, y_max = X[:, 1].min() - .5, X[:, 1].max() + .5

@@ -47,4 +47,9 @@ dendrogram(linkage_matrix,
            color_threshold=1,
            show_leaf_counts=True)
 
+
+plt.show()
+
+plt.figure(figsize=(10, 8))
+plt.scatter(X[:,0], X[:,1], c=clusters, cmap='prism')  # plot points with cluster dependent colors
 plt.show()

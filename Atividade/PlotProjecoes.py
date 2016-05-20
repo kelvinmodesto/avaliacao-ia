@@ -29,6 +29,8 @@ for line in file:
 #i. cs x ls;
 plt.plot(cs, ls, 'ro')
 
+#plt.title('cs x ls')
+#plt.show()
 #plt.plot(cs[:50], ls[:50], 'r.')#Iris-setosa
 #plt.plot(cs[51:100], ls[51:100], 'b.')#Iris-versicolor
 #plt.plot(cs[101:150], ls[101:150], 'g.')#Iris-virginica
@@ -36,37 +38,34 @@ plt.plot(cs, ls, 'ro')
 
 #ii. cs x cp;
 plt.plot(cs, cp, 'bo')
+#plt.title('cs x cp')
+#plt.show()
 
 #iii. cs x lp;
 plt.plot(cs, lp, 'g^')
+#plt.title('cs x lp')
+#plt.show()
+
 
 #iv. ls x cp;
 plt.plot(ls, cp, 'r^')
 
+#plt.title('ls x cp')
+#plt.show()
+
 #v. ls x lp;
 plt.plot(ls, lp, 'r*')
+
+#plt.title('ls x lp')
+#plt.show()
 
 #vi. cp x lp.
 plt.plot(cp, lp, 'y.')
 
+#plt.title('cp x lp')
+#plt.show()
 
 #plt.savefig('grafico.png')
+plt.title('Todas analises')
 plt.show()
 
-
-"""b. Responda:"""
-#i. Você percebe algum padrão nos dados?
-
-"""Alguns dados parecem esta agrupados """
-
-#ii. Existe algum grupo que é mais fácil de separar?
-
-"""Alguns grupos possuem uma parte que pode ser reparada mais facilmente, porém a outra parte está misturada com outros grupos"""
-
-#iii. Qual dimensão parece ser mais informativa? (útil para classificação)
-
-"""4 dimensão, uma vez que """
-
-#[<matplotlib.lines.Line2D instance at 0x01878990>]
-
-#show( )
